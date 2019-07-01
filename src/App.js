@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Provider } from "react-redux";
+import "./config/ReacotronConfig";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import store from "./store";
+import TodoList from "./TodoList";
+
+console.tron.log("testando");
+
+const App = () => (
+  //usa a API de context do React (estudar depois)
+  <Provider store={store}>
+    <TodoList />
+  </Provider>
+);
 
 export default App;
