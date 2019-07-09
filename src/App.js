@@ -3,14 +3,13 @@ import { Provider } from "react-redux";
 import "./config/ReacotronConfig";
 
 import store from "./store";
-import TodoList from "./TodoList";
 
-console.tron.log("testando");
+import Routes from "./routes";
 
 const App = () => (
   //usa a API de context do React (estudar depois)
   <Provider store={store}>
-    <TodoList />
+    <Routes />
   </Provider>
 );
 

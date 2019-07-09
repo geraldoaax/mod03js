@@ -1,2 +1,5 @@
 1 Configurar Store
 #yarn add redux react-redux
+
+2 Configurar Rotas - opção de roteamento mais comum
+#yarn add react-router-dom
