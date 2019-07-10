@@ -3,3 +3,6 @@
 
 2 Configurar Rotas - opção de roteamento mais comum
 #yarn add react-router-dom
+
+3 Redux Saga - middlewares - Entre a Action e o Reducer
+#yarn add redux-saga axios
