@@ -1,6 +1,6 @@
 import { call, put } from "redux-saga/effects";
 import api from "../../services/api";
-import Reactotron from "reactotron-react-js";
+//import Reactotron from "reactotron-react-js";
 
 import { addFavoriteSucess } from "../actions/favorites";
 
@@ -17,7 +17,7 @@ export function* addFavorite(action) {
     url: data.html_url
   };
 
-  Reactotron.log(repositoryData);
+  //Reactotron.log(repositoryData);
   //buscar apenas as informações que queremos
 
   //chamar a action sucess

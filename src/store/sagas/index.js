@@ -1,3 +1,6 @@
+//import Reactotron from "reactotron-react-js";
+//import createSagaMiddleware from "redux-saga";
+
 import { all, takeLatest } from "redux-saga/effects";
 //takeLatest se tiver uma requisição ele cancela e pega a ultima do user (otimiza)
 //adimite apenas a ultima requisição (diferente de takeEvery - vai cascateando)
@@ -10,3 +13,10 @@ export default function* rootSaga() {
   //primeiro parametro é o type do action (toda vez q ele é disparado dispara o addFavorite)
   //all é usado para lidar com vários saga
 }
+
+// create our new saga monitor
+//const sagaMonitor = Reactotron.createSagaMonitor();
+
+// and in your call to createSagaMiddlware, pass it along inside
+// the 1st parameter's object.
+//const sagaMiddleware = createSagaMiddleware({ sagaMonitor });

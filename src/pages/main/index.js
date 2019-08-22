@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Proptypes from "prop-types";
+//import Reactotron from "reactotron-react-js";
 
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -38,7 +39,6 @@ class Main extends Component {
           />
           <button type="submit">Adicionar</button>
         </form>
-
         <ul>
           {this.props.favorites.map(favorite => (
             <li key={favorite.id}>
